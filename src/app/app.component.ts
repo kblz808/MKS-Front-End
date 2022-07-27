@@ -30,4 +30,8 @@ export class AppComponent {
   onRoute():void {
     this.router.navigate(['/routes'],{relativeTo: this.route})
   }
+
+  onTransportBid(): void{
+    this.router.navigate(['transport_bids'], {relativeTo: this.route})
+  }
 }

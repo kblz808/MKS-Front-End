@@ -16,6 +16,8 @@ import { UnitOfMeasureFormComponent } from './components/ui/unit-of-measure-form
 import { LocationFormComponent } from './components/ui/location-form/location-form.component';
 import { RouteFormComponent } from './components/ui/route-form/route-form.component';
 import { TransportPlanItemFormComponent } from './components/ui/transport-plan-item-form/transport-plan-item-form.component';
+import { TransportBidComponent } from './components/container/transport-bid/transport-bid.component';
+import { TransportBidFormComponent } from './components/ui/transport-bid-form/transport-bid-form.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { TransportPlanItemFormComponent } from './components/ui/transport-plan-i
     LocationFormComponent,
     RouteFormComponent,
     TransportPlanItemFormComponent,
+    TransportBidComponent,
+    TransportBidFormComponent,
   ],
   imports: [
     CommonModule,

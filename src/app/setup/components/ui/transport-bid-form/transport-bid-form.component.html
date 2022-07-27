@@ -1,0 +1,41 @@
+<h3 mat-dialog-title>New Transport Bid</h3>
+<div mat-dialog-content>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-form-field class="full-width">
+            <input type="text" matInput formControlName="reference_no" placeholder="Reference Number">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <input type="text" matInput formControlName="description" placeholder="Description">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <input type="text" matInput formControlName="start_date" placeholder="Start Date">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <input type="text" matInput formControlName="end_date" placeholder="End Date">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <input type="text" matInput formControlName="opening_date" placeholder="Opening Date">
+        </mat-form-field>
+
+        <mat-select formControlName="status" placeholder="Status" style="margin: 20px 0px;">
+            <mat-option *ngFor="let option of options" [value]= option>
+            {{ option }}
+            </mat-option> 
+        </mat-select>
+
+        <mat-form-field class="full-width">
+            <input type="text" matInput formControlName="bid_bond_amount" placeholder="Bind Bond Amount">
+        </mat-form-field>
+
+        <mat-select formControlName="transport_plan" placeholder="Transport Plan" style="margin: 20px 0px;">
+            <mat-option *ngFor="let plan of transport_plans [value]= option>
+            {{ option }}
+            </mat-option> 
+        </mat-select>
+
+    </form>
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-raised-button (click)="onCancel()">Cancel</button>
+    <button mat-raised-button type="submit" (click)="onSubmit()">Save</button>
+</div>

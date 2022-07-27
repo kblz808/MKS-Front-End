@@ -27,9 +27,9 @@ export class RouteComponent implements OnInit {
   
   columns: Column[] = [
     { name: 'name', label: 'Name'},
-    { name: 'region_id', label: 'Region'},
-    { name: 'source_id', label: 'Source'},
-    { name: 'destination', label: 'Destination'},
+    { name: 'region_name', label: 'Region'},
+    { name: 'source_name', label: 'Source'},
+    { name: 'destination_name', label: 'Destination'},
   ];
 
   
