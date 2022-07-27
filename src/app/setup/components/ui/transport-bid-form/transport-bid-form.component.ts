@@ -2,13 +2,13 @@ import { Component, EventEmitter, Inject, OnInit, Output } from '@angular/core';
 import  {FormBuilder, FormGroup} from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
+
 @Component({
   selector: 'app-transport-bid-form',
   templateUrl: './transport-bid-form.component.html',
   styleUrls: ['./transport-bid-form.component.scss']
 })
 export class TransportBidFormComponent implements OnInit {
-
   @Output() formSubmit = new EventEmitter();
   form: FormGroup;
 
@@ -43,5 +43,4 @@ export class TransportBidFormComponent implements OnInit {
   onCancel(): void {
     this.dialogRef.close();
   }
-
 }

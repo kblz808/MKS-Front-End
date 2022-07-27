@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+
 import { TransportPlansQuery } from 'src/app/setup/state/transport-plans.query';
 import { TransportPlansService } from 'src/app/setup/state/transport-plans.service';
 import { Column } from 'src/app/shared/models/column.model';
@@ -9,6 +10,7 @@ import { ActivatedRoute,Router } from '@angular/router';
 import { EMPTY_TRANSPORT_BID, TransportBid } from 'src/app/setup/models/transport-bid.model';
 import { TransportBidsService } from 'src/app/setup/state/transport-bids.service';
 import { TransportBidsQuery } from 'src/app/setup/state/transport-bids.query';
+
 import { TransportBidFormComponent } from '../../ui/transport-bid-form/transport-bid-form.component';
 
 @Component({
@@ -17,7 +19,6 @@ import { TransportBidFormComponent } from '../../ui/transport-bid-form/transport
   styleUrls: ['./transport-bid.component.scss']
 })
 export class TransportBidComponent implements OnInit {
-
   actions: any[] = [
     { color: 'success', label: 'New', disabled: false, icon: 'add_circle' }
   ];
