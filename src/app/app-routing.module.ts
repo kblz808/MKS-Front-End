@@ -7,6 +7,7 @@ import { TransportBidItemComponent } from './setup/components/container/transpor
 import { TransportBidComponent } from './setup/components/container/transport-bid/transport-bid.component';
 import { LocationComponent } from './setup/components/container/location/location.component';
 import { RouteComponent } from './setup/components/container/route/route.component';
+import { TransportBidComponent } from './setup/components/container/transport-bid/transport-bid.component';
 import { TransportPlanItemComponent } from './setup/components/container/transport-plan-item/transport-plan-item.component';
 import { TransportPlanComponent } from './setup/components/container/transport-plan/transport-plan.component';
 import { UnitOfMeasureComponent } from './setup/components/container/unit-of-measure/unit-of-measure.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'unit_of_measures', component:UnitOfMeasureComponent},
   {path:'locations', component: LocationComponent},
   {path:'routes', component:RouteComponent},
-  {path:'transport_plan_items/:id', component: TransportPlanItemComponent}
+  {path:'transport_plan_items/:id', component: TransportPlanItemComponent},
+  {path: 'transport_bids', component: TransportBidComponent},
 
 ];
 
